@@ -1,7 +1,11 @@
 export default {
     head: (
         <>
-            <title>NinjaWorld.io Docs</title>
+            <title>NinjaWorld Docs</title>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+            <meta property="og:title" content="Ninja World" />
+            <meta property="og:description" content="Ninja World Game site docs" />
+            <meta property="og:image" content="https://i.imgur.com/kuMqFxt.png" />
         </>
     ),
     logo: <span>Ninja Worlds Docs</span>,
