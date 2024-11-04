@@ -1,8 +1,10 @@
+import { Cards } from 'nextra/components'
+import { ArrowBigUpDash, ArrowBigDown, Brain, Flame, Shield, Zap } from 'lucide-react';
+
 # Tipos de Jutsus
 Nas batalhas os jutsus vão além das categorias de Ninjutsu, Taijutsu e Genjutsu, sendo classificados também conforme seu propósito estratégico em combate. 
 Cada tipo oferece vantagens e efeitos específicos, permitindo que você personalize seu estilo de luta. 
 Aqui está uma visão geral de cada tipo:
-
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/K0DgGhRg52I?si=Bom7hckUACWeTJti" 
     title="YouTube video player" 
@@ -10,7 +12,14 @@ Aqui está uma visão geral de cada tipo:
     referrerPolicy="strict-origin-when-cross-origin" 
     allowFullScreen></iframe>
 
-## Attack
+<Cards>
+  <Cards.Card icon={<ArrowBigUpDash />} title="Buffs" href="/jutsus/buff"/>
+  <Cards.Card icon={<ArrowBigDown />} title="Debuffs" href="/jutsus/debuff"/>
+  <Cards.Card icon={''} title="Passives" href="/jutsus/passive"/>
+  <Cards.Card icon={''} title="Ultimates" href="/jutsus/ultimate"/>
+</Cards>
+
+{/* ## Attack
 Jutsus ofensivos focados em causar dano direto ao oponente. 
 Esses golpes são essenciais para enfraquecer e vencer os inimigos, sendo fundamentais em sua estratégia de ataque.
 
@@ -37,4 +46,4 @@ mas seus efeitos podem decidir o resultado da batalha. Use-as com cautela para u
 
 
 
-Explore e combine esses tipos de jutsus para criar estratégias personalizadas, utilizando o que cada um oferece para maximizar sua vantagem no campo de batalha.
+Explore e combine esses tipos de jutsus para criar estratégias personalizadas, utilizando o que cada um oferece para maximizar sua vantagem no campo de batalha. */}

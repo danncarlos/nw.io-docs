@@ -1,0 +1,73 @@
+Status são as métricas derivadas dos atributos do personagem, refletindo a performance e capacidade de sobrevivência em batalha. 
+Eles incluem pontos de vida, chakra, ataque, defesa, entre outros, e são fundamentais para definir o estilo e a estratégia do jogador. 
+Cada status é calculado a partir de uma combinação dos atributos principais, e a escolha de como distribuir esses atributos 
+molda as forças e fraquezas do personagem.
+
+> Status serão balanceados com base no feedback dos jogadores.
+
+## Fórmulas dos Status
+
+### Vida Total (HP)
+Define o quanto de dano o personagem pode receber antes de ser derrotado.
+```jsx
+HP = (Energia * 7) + (Resistência * 10)
+```
+
+### Chakra Total (CH)
+Representa a energia necessária para realizar jutsus.
+```jsx
+CH = (Energia * 15) + (Inteligência * 5)
+```
+
+### Ataque (Tai)
+Determina o dano dos ataques baseados em Taijutsu.
+```jsx
+ATK = (Taijutsu * 3) + (Força ^ 1.8 / 2)
+```
+>Nota: Valor mínimo de 10
+
+### Defesa (Tai)
+Reduz o dano físico recebido, dependendo dos atributos de Taijutsu e Resistência.
+```jsx
+DEF = (Taijutsu / 3) + (Resistência ^ 1.2 / 2)
+```
+>Nota: Valor mínimo de 10
+
+### Ataque (Nin)
+Define o dano causado por jutsus de Ninjutsu ou Genjutsu.
+```jsx
+ATK (Nin) = (Atributo Mágico Base * 3) + (Inteligência ^ 1.6 / 2)
+```
+>Nota: Atributo Mágico Base é o maior valor entre Ninjutsu e Genjutsu. Atk(Nin) mínimo de 10.
+
+### Defesa (Nin)
+Reduz o dano nin recebido, com base na Resistência e no maior valor entre Ninjutsu e Genjutsu.
+```jsx
+DEF(Nin) = (Atributo Mágico Base / 3) + (Resistência ^ 1.2 / 2)
+```
+>Nota: Atributo Mágico Base é o maior valor entre Ninjutsu e Genjutsu. Def(Nin) mínimo de 10.
+
+
+### Concentração (%)
+Influencia a precisão dos jutsus e a chance de sucesso em Genjutsus.
+```jsx
+Concentração = (Ninjutsu / 2) + (Genjutsu / 1.8) + (Inteligência / 2) + 5
+```
+
+### Percepção (%)
+Ajuda a detectar e resistir a Genjutsus e outras técnicas.
+```jsx
+Percepção = (Inteligência * 0.6) + (Resistência * 0.4) + (Iniciativa * 0.2) + 5
+```
+
+### Taxa de Crítica (%)
+Define a chance de acertar um golpe crítico em combate.
+```jsx
+Taxa de Crítica = (Taijutsu + Ninjutsu + Genjutsu) ^ 1.2 / 2 + 5
+```
+
+### Dano Crítico (%)
+Define o multiplicador de dano em golpes críticos.
+```jsx
+Dano Crítico = 150 + ((Taijutsu + Ninjutsu + Genjutsu) * 0.7)
+```

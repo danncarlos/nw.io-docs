@@ -27,7 +27,17 @@ export default {
         content: 'Question? Give usdd feedback →',
         labels: 'feedback'
     },
-
+    banner: {
+        key: 'version',
+        content: (
+            <span>Ninja World está atualmente em desenvolvimento, informações e imagens podem não representar o resultado final do projeto.</span>
+            // <a href="https://nextra.site" target="_blank">
+            // </a>
+            // <a href="https://nextra.site" target="_blank">
+            //     🎉 Nextra 2.0 is released. Read more →
+            // </a>
+        )
+    },
 
     footer: {
         content: (

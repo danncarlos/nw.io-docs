@@ -1,18 +1,22 @@
 export default {
-    'next.js-link': {
-        title: 'Voltar para o NW ↗',
-        href: process.env.GAME_BASE_URL,
-        newWindow: true
-    },
+    // 'next.js-link': {
+    //     title: 'Voltar para o NW ↗',
+    //     href: process.env.GAME_BASE_URL,
+    //     newWindow: true
+    // },
     // '-- Themes': {
     //     type: 'separator',
     //     title: 'Themes'
     // },
     index: 'Início',
-    '-- Jutsus': {
+    roadmap: 'Roadmap',
+    updates: 'Dev Updates',
+    '-- Gameplay': {
         type: 'separator',
-        title: 'Jutsus',
+        title: 'Gameplay',
     },
     jutsus: '',
-    about: '',
+    attributes: 'Atributos',
+    status: 'Fórmulas de Status',
+    battleStatus: 'Fórmulas de Batalha'
 }

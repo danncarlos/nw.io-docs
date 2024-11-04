@@ -1,0 +1,23 @@
+### Dano
+Define o quanto de dano o personagem pode receber antes de ser derrotado.
+```jsx
+Dano = (JutsuBaseDamage + player Atk) - (oponent Def)
+```
+> É utilizada o atk e def com base no tipo de jutsu.
+
+### Acerto Crítico
+```jsx
+Taxa Crítica >= Critical Roll(1d100)
+```
+
+### Falha Crítica
+```jsx
+Critical Roll(1d100) = 1
+```
+> Falha ao utilizar o jutsu, não causa dano.
+
+### Dano Crítico
+```jsx
+(Dano * Crit. Damage %)
+```
+> Ex: 100(dano) * 150% = 150(caso acerte um ataque crítico)
