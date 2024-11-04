@@ -1,0 +1,40 @@
+# Buffs (diminuir as habilidades)
+
+Jutsus destinados a enfraquecer o oponente. São ideais para diminuir atributos como defesa ou precisão, tornando o inimigo mais vulnerável. 
+Também podem causar dano com o tempo(DoT - Damage Over Time)
+
+## Aplicação
+Para que que acerte com sucesso um debuff(genjutsu) no inimigo, o player precisa passar em testes de concentration x perception (precisão x resistência),
+que são divididos em duas etapas:
+
+### Etapa 1 - Precisão
+Player
+* Cada Debuff tem uma % que representa a chance de acertar no inimigo, que também é influenciada pela **concentração** do player.
+* Para garantir que a precisão final esteja dentro de uma faixa controlada, o valor final é limitado:
+    - Mínimo de 5%: Mesmo que a concentração seja baixa, sempre existe uma chance mínima de 5% de que o Genjutsu acerte.
+    - Máximo de 95%: Para evitar uma precisão garantida, nunca ultrapassa 95%, preservando a possibilidade de falha.
+* Rola **1d100**. Se o valor obtido for menor ou igual à precisão final, o teste foi bem-sucedido, e segue para à segunda etapa.
+
+### Etapa 2 - Resistência
+Player x Oponente
+* Com base na concentração do player e na percepção do inimigo, é feito um calculo.
+* Para garantir que a percepção final esteja dentro de uma faixa controlada, o valor final é limitado:
+    - Mínimo de 5%: Mesmo que a percepção seja baixa, sempre existe uma chance mínima de 5% de resistir ao genjutsu.
+    - Máximo de 95%: Para evitar uma resistência garantida, nunca ultrapassa 95%, preservando a possibilidade acerto.
+* Rola **1d100**. Se o valor obtido for menor ou igual à chance final ajustada, o Genjutsu acerta o oponente.
+
+## Motivo
+Debuffs têm o potencial de ser extremamente poderosos, sendo capazes de enfraquecer significativamente o oponente e, em alguns casos, até decidir uma batalha. 
+Para evitar que essas técnicas criem um desequilíbrio e tornem certas lutas excessivamente fáceis ou frustrantes, introduzimos uma mecânica de testes de 
+precisão e resistência. Esses testes adicionam um elemento de sorte (RNG), garantindo que a aplicação de debuffs não seja automática.
+Assim, mesmo com alta concentração do jogador ou baixa percepção do oponente, sempre há uma chance de resistência. 
+Esse sistema promove um combate mais equilibrado e imprevisível, onde tanto habilidade quanto sorte podem influenciar o resultado.
+
+## Exemplos de Debuffs
+| Nome | Imagem | Descrição | Custo(Chakra) | Cooldown |
+| :----- | :----: | :----: | :----: | ----: |
+| Ilusão de Ataque | <img src="/jutsus/debuff/jutsu-AtkIlusion.webp" alt="drawing" width="125"/> | -15 pontos de ataque base para o inimigo por 4 turnos | 45 | 4 turnos |
+| Ilusão Demoníaca do Inferno | <img src="/jutsus/debuff/jutsu-narakumiv2.webp" alt="drawing" width="125"/> | causa 20 de dano inimigo por 3 turnos | 30 | 5 turnos |
+
+
+**ataque base**: habilidades que reduzem o ataque base, afetam tanto ataque TAI quanto ataque NIN

@@ -1,10 +1,18 @@
 export default {
     'next.js-link': {
-        title: 'Next.js Docs ↗',
-        href: 'https://nextjs.org?utm_source=nextra.site&utm_medium=referral&utm_campaign=sidebar',
+        title: 'Voltar para o NW ↗',
+        href: process.env.GAME_BASE_URL,
         newWindow: true
     },
-    index: '',
-    about: '',
+    // '-- Themes': {
+    //     type: 'separator',
+    //     title: 'Themes'
+    // },
+    index: 'Início',
+    '-- Jutsus': {
+        type: 'separator',
+        title: 'Jutsus',
+    },
     jutsus: '',
+    about: '',
 }

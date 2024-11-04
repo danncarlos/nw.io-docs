@@ -1,0 +1,46 @@
+import { Cards } from 'nextra/components'
+import { ArrowBigUpDash, BicepsFlexed, Brain, Flame, Shield, Zap } from 'lucide-react';
+import { JutsuBaseButton } from '../../components/nw/jutsuBaseButton';
+
+# Habilidades Passivas
+
+Desbloqueie o verdadeiro potencial do seu ninja com habilidades passivas que aprimoram suas capacidades em combate. 
+Essas habilidades fornecem benefícios constantes e sutis, fortalecendo seus atributos e aumentando sua resistência. 
+Escolha com sabedoria, pois elas moldam a base sobre a qual suas estratégias serão construídas.
+
+## Condições de Ativação
+Habilidades passivas possuem uma condição de ativação, podendo ser:
+* **TurnStart** - Acontece antes de realizar o ataque.
+* **TakingDamage** - Acontece após receber dano.
+* **DealingDamage** - Acontece depois de causar dano.
+* **BattleStart** - Acontece ao inicío do combate. *Efeito é ativado apenas uma vez por batalha.*
+
+
+## Exemplos de habilidades passivas
+| Nome | Imagem | Descrição | Ativação |
+| :----- | :----: | :----: | ----: |
+| Poison Mist | <img src="/jutsus/passives/poisonMist.webp" alt="drawing" width="125"/> |  Ao inicio de cada turno, aplica 1 ~ 6 de dano ao inimigo   | TurnStart |
+| Durabilidade Ninja  | N/A |  Ao inicio de da batalha adiciona +50 de HP | BattleStart |
+| Save Life    | N/A |  Ao receber dano que seria letal, ganha o equivalente à 80% do HP total de volta   | TakingDamage |
+| Chakra Flow    | N/A |  Recupera uma pequena quantidade de chakra a cada turno | TurnStart |
+
+
+>Habilidades já implementadas e que podem sofrer alterações antes de lançamento do jogo
+
+{/* <Cards>
+  <Cards.Card
+    icon={<ArrowBigUpDash />}
+    title="Callout"
+    href="/docs/guide/built-ins/callout"
+  />
+  <Cards.Card
+    icon={<BicepsFlexed />}
+    title="Tabs"
+    href="/docs/guide/built-ins/tabs"
+  />
+  <Cards.Card
+    icon={<Flame />}
+    title="Steps"
+    href="/docs/guide/built-ins/steps"
+  />
+</Cards> */}
