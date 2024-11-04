@@ -41,15 +41,13 @@ export default {
 
     footer: {
         content: (
-            <div className="flex w-full flex-col items-center sm:items-start">
-                {/* <div>
-                    <a
-                        className="nextra-focus flex items-center gap-1 text-current"
+            <div className="flex w-full flex-col items-center sm:items-start justify-center">
+                <div>
+                    <a className="nextra-focus flex items-center gap-1 text-current"
                         target="_blank"
                         rel="noreferrer"
                         title="vercel.com homepage"
-                        href="https://vercel.com?utm_source=nextra.site"
-                    >
+                        href="https://vercel.com?utm_source=nextra.site">
                         <span>Powered by</span>
                         <svg height={20} viewBox="0 0 283 64" fill="none">
                             <title>Vercel</title>
@@ -59,7 +57,7 @@ export default {
                             />
                         </svg>
                     </a>
-                </div> */}
+                </div>
                 <p className="mt-6 text-xs">
                     © {new Date().getFullYear()} The Nextra Project.
                 </p>
